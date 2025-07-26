@@ -1,12 +1,41 @@
-# React + Vite
+🚀 BlogWebsite – Full Stack Blog Website
+A modern, feature-rich blog platform built using React, Tailwind CSS, Redux, Appwrite, and more.
+Create, edit, and publish beautiful blog posts with secure authentication and a seamless user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ Tech Stack Used
+💻 Frontend
+⚛️ React.js (Vite-based setup)
+🎨 Tailwind CSS for responsive design & dark mode
+🔄 Redux Toolkit for global state management
+🌐 React Router for dynamic routing
+✅ React Hook Form for intuitive form handling
+✍️ TinyMCE Rich Text Editor for blog content creation
+🧩 Backend (BaaS) - Appwrite
+🔐 Appwrite Auth: Secure login/signup
+🗂️ Appwrite Database: Store blog posts with structured collections
+🖼️ Appwrite Storage: Image upload & preview
+🎯 Appwrite Permissions & Roles: Access control per user
+⚙️ Core Features
+🔐 User authentication (Login / Signup)
+📝 Create, edit, delete, and view blog posts
+🖼️ Image upload with preview and storage
+🌙 Dark mode toggle
+✨ Slug generation & post status toggling (active/inactive)
+🔒 Protected routes (based on auth state)
+🧠 Dynamic UI rendering using Redux state
+📚 Learning & Challenges Faced
+This project was a deep dive into full-stack development, from frontend architecture to backend integration:
 
-Currently, two official plugins are available:
+Configuring platform domains and dealing with CORS issues in Appwrite
+Managing form state with React Hook Form
+Debugging rich text editor bugs and async logic in Redux
+Gaining mastery over auth flows, protected routes, and Appwrite permissions
+Through each challenge, I learned to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Read documentation more effectively
+Troubleshoot complex errors
+Architect scalable React apps
+🚀 Getting Started
+1. Clone this repository
+git clone https://github.com/RegiRock07/BlogApp.git
+cd BlogApp
