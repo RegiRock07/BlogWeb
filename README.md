@@ -37,5 +37,5 @@ Troubleshoot complex errors
 Architect scalable React apps
 🚀 Getting Started
 1. Clone this repository
-git clone https://github.com/RegiRock07/BlogApp.git
-cd BlogApp
+git clone  https://github.com/RegiRock07/BlogWebsite.git
+cd BlogWeb
