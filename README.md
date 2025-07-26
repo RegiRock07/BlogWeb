@@ -1,4 +1,4 @@
-# 🚀 BlogWebsite – Full Stack Blog Website
+# 🚀 BlogWeb – Full Stack Blog Website
 
 A modern, feature-rich blog platform built using **React**, **Tailwind CSS**, **Redux**, **Appwrite**, and more.  
 Create, edit, and publish beautiful blog posts with secure authentication and a seamless user experience.
