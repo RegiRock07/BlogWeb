@@ -32,7 +32,7 @@ function App() {
 
   //condition Rendering
  return !loading ? (
-    <div className="min-h-screen w-full flex flex-col bg-[#1a1a1a]"> 
+    <div className="min-h-screen w-screen flex flex-col bg-[#1a1a1a] overflow-x-hidden">
       <Header />
       <main className="flex-grow m-0 p-0">
         <Outlet />
