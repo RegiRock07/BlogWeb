@@ -6,9 +6,4 @@ html, body, #root {
   width: 100%;
   height: 100%;
   background-color: #1a1a1a;
-  overflow-x: hidden; /* 🔥 This is important */
-}
-
-* {
-  box-sizing: border-box; /* Prevents element width overflow from padding */
 }
