@@ -6,8 +6,8 @@ function PostCard({$id, title, featuredImage}) {  //ye $id appwrite ka khela hai
     
   return (
     <Link to={`/post/${$id}`}>
-        <div className='w-full bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-xl p-4 border border-neutral-700 hover:border-neutral-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105'>
-            <div className='w-full justify-center mb-4'>
+        <div className='w-full h-80 bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-xl p-4 border border-neutral-700 hover:border-neutral-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex flex-col'>
+            <div className='w-full justify-center mb-4 flex-shrink-0'>
                 {/* Debug info */}
                 {console.log('PostCard Debug:', { $id, title, featuredImage })}
                 
@@ -28,9 +28,9 @@ function PostCard({$id, title, featuredImage}) {  //ye $id appwrite ka khela hai
                     </div>
                 )}
             </div>
-            <h2
-            className='text-2xl font-bold text-white hover:text-neutral-300 transition-colors'
-            >{title}</h2>
+            <h2 className='text-2xl font-bold text-white hover:text-neutral-300 transition-colors flex-1 flex items-center justify-center text-center leading-tight line-clamp-3'>
+                {title}
+            </h2>
         </div>
     </Link>
   )
