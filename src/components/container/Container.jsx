@@ -1,7 +1,8 @@
 import React from 'react'
+import './Container.css'
 
 function Container({children}) {
-    return <div className='w-full mx-auto px-4'>{children}</div>;
+    return <div className='full-width-container'>{children}</div>;
 }
 export default Container;
 

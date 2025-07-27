@@ -1,0 +1,20 @@
+/* Container.css */
+.full-width-container {
+  width: 100vw;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Just basic responsive padding - no specific window sizes */
+@media screen and (max-width: 480px) {
+  .full-width-container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .full-width-container {
+    padding: 0 30px;
+  }
+}
