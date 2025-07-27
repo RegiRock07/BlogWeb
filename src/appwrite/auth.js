@@ -45,6 +45,14 @@ export class AuthService{
 
     async login({ email, password }) {
         try {
+            // Force clear any existing session first
+            try {
+                await this.account.deleteSessions();
+            } catch (error) {
+                // Ignore if no session exists
+                console.log("No existing session to clear",error.message);
+            }
+            
             return await this.account.createEmailPasswordSession(email, password);
         } catch (error) {
             console.error("AppwriteService :: login ❌", error.message);
