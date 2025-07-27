@@ -1,8 +1,8 @@
 import './App.css'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import authService from "./appwrite/auth"
-import { login,logout } from "./store/authSlice"
+import { login, logout } from "./store/authSlice"
 import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
 
@@ -12,27 +12,24 @@ function App() {
 
   useEffect(() => {
     authService.getCurrentUser()
-
-    .then((userData) => {   
-      if(userData){
-        dispatch(login({userData}))
-      }
-      else{
-        dispatch(logout())
-      }
-    })
-
-    .catch((error) => {
+      .then((userData) => {
+        if (userData) {
+          dispatch(login({ userData }))
+        }
+        else {
+          dispatch(logout())
+        }
+      })
+      .catch((error) => {
         console.log("App :: getCurrentUser error ⛔", error);
         dispatch(logout()); // ensure app doesn't stay stuck
-    })
-
-    .finally(() => setLoading(false))  //Loading over
-  },[dispatch]);
+      })
+      .finally(() => setLoading(false))  //Loading over
+  }, [dispatch]);
 
   //condition Rendering
- return !loading ? (
-    <div className="min-h-screen w-full flex flex-col bg-[#1a1a1a]"> 
+  return !loading ? (
+    <div className="min-h-screen w-full overflow-x-hidden flex flex-col bg-[#1a1a1a] text-white scroll-smooth">
       <Header />
       <main className="flex-grow m-0 p-0">
         <Outlet />
@@ -42,6 +39,7 @@ function App() {
   ) : null;
 }
 export default App
+
 /*
 Promise matlb, tum kuch request kro, agar succesful hota h, to fir 
 .then se btao aage kya Krna h
@@ -56,4 +54,3 @@ state- loading
 kyuki jab aap appwrite se data fetch karenge toh thoda time lag skta network request mei..loading time
 so make a loading state --> you can do conditional rendering through it
 */
-
